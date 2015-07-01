@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @aluno.nome %>
+</p>
+
+<p>
+  <strong>Data de nascimento:</strong>
+  <%= @aluno.data_de_nascimento %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @aluno.sexo %>
+</p>
+
+<p>
+  <strong>Rg:</strong>
+  <%= @aluno.rg %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @aluno.cpf %>
+</p>
+
+<p>
+  <strong>Cep:</strong>
+  <%= @aluno.cep %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @aluno.endereco %>
+</p>
+
+<p>
+  <strong>Complemento:</strong>
+  <%= @aluno.complemento %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @aluno.bairro %>
+</p>
+
+<p>
+  <strong>Uf:</strong>
+  <%= @aluno.uf %>
+</p>
+
+<p>
+  <strong>Telefone emergencial:</strong>
+  <%= @aluno.telefone_emergencial %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @aluno.email %>
+</p>
+
+<p>
+  <strong>Foto:</strong>
+  <%= @aluno.foto %>
+</p>
+
+<p>
+  <strong>Id responsavel:</strong>
+  <%= @aluno.id_responsavel %>
+</p>
+
+<%= link_to 'Editar', edit_aluno_path(@aluno) %> |
+<%= link_to 'Voltar', alunos_path %>
