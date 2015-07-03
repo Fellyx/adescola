@@ -1,17 +1,16 @@
-class Aluno < ActiveRecord::Base
+class Responsavel < ActiveRecord::Base
 
-	
+
 
 	#Relacionamentos
-		
-		has_and_belongs_to_many :responsaveis
+
+		has_and_belongs_to_many	:alunos
 
 	#Validações
 
-		validates_presence_of :nome, message: "O Nome deve ser preenchido"
-		validates_presence_of :data_de_nascimento, message: "A Data de Nascimento
-		 													 deve ser preenchida"
-	 	validates_presence_of :cep, message: "CEP deve ser preenchido"
+		validates_presence_of :nome, message: "Nome deve Ser Preenchido"		
+		validates_presence_of :sexo, message: "Sexo deve ser preenchido"
+		validates_presence_of :cep, message: "CEP deve ser preenchido"
 		validates_presence_of :endereco, message: "O Endereço deve ser preenchido"
 		validates_presence_of :bairro, message: "O Bairro deve ser preenchido"
 		validates_presence_of :cidade, message: "A Cidade deve ser preenchida"
@@ -33,6 +32,6 @@ class Aluno < ActiveRecord::Base
 													 ter 2 dígitos"
 
 
-
-
 end
+
+				
