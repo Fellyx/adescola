@@ -62,13 +62,10 @@
 
 <p>
   <strong>Foto:</strong>
-  <%= @aluno.foto %>
+  <%= image_tag(@aluno.foto_url, :width => 600) if @aluno.foto.present? %>
 </p>
 
-<p>
-  <strong>Id responsavel:</strong>
-  <%= @aluno.id_responsavel %>
-</p>
+
 
 <%= link_to 'Editar', edit_aluno_path(@aluno) %> |
 <%= link_to 'Voltar', alunos_path %>

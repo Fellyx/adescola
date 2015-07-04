@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+
+
+
 #gem para o Bootstrap
 gem 'bootstrap-sass', '~> 3.2.0'
 
@@ -42,3 +45,5 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# gem para upload de imagens
+gem 'carrierwave'
