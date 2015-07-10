@@ -31,7 +31,9 @@ class Responsavel < ActiveRecord::Base
 	 	validates_length_of :uf, :is => 2, message: "A Unidade da Federação deve
 													 ter 2 dígitos"
 
+	# Upload de imagens
 
+		mount_uploader :foto, PictureUploader
 end
 
 				

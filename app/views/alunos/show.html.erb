@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Foto:</strong>
+  <%= image_tag(@aluno.foto_url, :width => 100) if @aluno.foto.present? %>
+</p>
+<p>
   <strong>Nome:</strong>
   <%= @aluno.nome %>
 </p>
@@ -44,6 +48,10 @@
   <strong>Bairro:</strong>
   <%= @aluno.bairro %>
 </p>
+<p>
+  <strong>Cidade:</strong>
+  <%= @aluno.cidade %>
+</p>
 
 <p>
   <strong>Uf:</strong>
@@ -60,10 +68,6 @@
   <%= @aluno.email %>
 </p>
 
-<p>
-  <strong>Foto:</strong>
-  <%= image_tag(@aluno.foto_url, :width => 600) if @aluno.foto.present? %>
-</p>
 
 
 

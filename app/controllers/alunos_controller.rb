@@ -15,6 +15,7 @@ class AlunosController < ApplicationController
   # GET /alunos/new
   def new
     @aluno = Aluno.new
+    @responsaveis = Responsavel.all
   end
 
   # GET /alunos/1/edit

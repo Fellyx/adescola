@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Foto:</strong>
+  <%= image_tag(@responsavel.foto_url, :width => 100) if @responsavel.foto.present? %>
+</p>
+<p>
   <strong>Nome:</strong>
   <%= @responsavel.nome %>
 </p>
@@ -60,10 +64,6 @@
   <%= @responsavel.email %>
 </p>
 
-<p>
-  <strong>Foto:</strong>
-  <%= @responsavel.foto %>
-</p>
 
-<%= link_to 'Edit', edit_responsavel_path(@responsavel) %> |
-<%= link_to 'Back', responsaveis_path %>
+<%= link_to 'Editar', edit_responsavel_path(@responsavel) %> |
+<%= link_to 'Voltar', responsaveis_path %>
